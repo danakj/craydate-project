@@ -240,7 +240,7 @@ dependencies = [
 
 [[package]]
 name = "craydate"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "craydate-macro",
  "craydate-sys",
@@ -250,11 +250,13 @@ dependencies = [
 
 [[package]]
 name = "craydate-build"
-version = "0.1.0"
+version = "0.1.1"
 
 [[package]]
 name = "craydate-macro"
-version = "0.1.0"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0869bb0acba9a7313bad8e406efc7c0d0a80ae74cf4dc868bd2a81f19533c423"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -263,7 +265,9 @@ dependencies = [
 
 [[package]]
 name = "craydate-sys"
-version = "0.1.0"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d59c4f27deb21a0d891eabd555b05965a149e889d2debaf8ddafb4b7a91e03ab"
 dependencies = [
  "bindgen",
  "dynpath",
@@ -293,7 +297,8 @@ dependencies = [
 [[package]]
 name = "dynpath"
 version = "0.1.4"
-source = "git+https://github.com/danakj/dynpath?branch=main#8ee0f897a3cfc32a86fb689525d3412a2ed7585e"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "606884a4184cd6a5f7b9cf256b09ea2195d0b858a40dc8aeb0c75afb5e18242e"
 dependencies = [
  "proc-macro2",
  "quote",

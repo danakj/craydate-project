@@ -9,11 +9,11 @@ crate-type = ["cdylib", "staticlib"]
 [dependencies]
 game = {package = "windup", path = "../windup"}
 game-assets = {package = "windup-assets", path = "../windup/windup-assets", optional = true}
-craydate = {path = "../windup/craydate"}
-craydate-build = {path = "../windup/craydate-build", optional = true}
+craydate = {path = "../../craydate/craydate"}
+craydate-build = {path = "../../craydate/craydate-build", optional = true}
 
 [build-dependencies]
-craydate-build = {path = "../windup/craydate-build"}
+craydate-build = {path = "../../craydate/craydate-build"}
 
 [[bin]]
 name = "make_pdx"
