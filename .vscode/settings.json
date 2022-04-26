@@ -1,7 +1,7 @@
 {
-    "craydateProjectRootCrate": "windup-project",
+    "craydateProjectRootCrate": ".",
     "rust-analyzer.linkedProjects": [
-        "windup-project/Cargo.toml",
+        "./Cargo.toml",
     ],
 
     "craydateHostTarget": "x86_64-pc-windows-msvc",
@@ -18,10 +18,4 @@
         "bins"
     ],
     "rust-analyzer.checkOnSave.allTargets": false,
- 
-    "[rust]": {
-        "editor.rulers": [
-            100
-        ],
-    }
-}
+ }
