@@ -122,7 +122,7 @@
                 "cwd": "${config:craydateProjectRootCrate}/target/${config:craydateHostTarget}/debug",
             },
             "args": [
-                ">stdout.txt",
+                ">../../../stdout.txt",
                 "2>&1",
             ],
             "dependsOn": [
@@ -142,7 +142,7 @@
                 "cwd": "${config:craydateProjectRootCrate}/target/${config:craydateHostTarget}/release",
             },
             "args": [
-                ">stdout.txt",
+                ">../../../stdout.txt",
                 "2>&1",
             ],
             "dependsOn": [
