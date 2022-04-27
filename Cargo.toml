@@ -1,5 +1,5 @@
 [package]
-name = "YOUR GAME"
+name = "YOUR_GAME-project"
 version = "0.1.0"
 edition = "2021"
 license = "MIT/Apache-2.0"
@@ -9,7 +9,7 @@ crate-type = ["cdylib", "staticlib"]
 
 [dependencies]
 game = {package = "YOUR_GAME", path = "../YOUR_GAME/YOUR_GAME"}
-game-assets = {package = "YOUR_GAME-assets", path = "../YOUR_GAME/YOUR_GAME-assets", optional = true}
+# game-assets = {package = "YOUR_GAME-assets", path = "../YOUR_GAME/YOUR_GAME-assets", optional = true}
 craydate = "0.1"
 craydate-build = {version = "0.1", optional = true}
 
@@ -22,7 +22,7 @@ name = "make_pdx"
 name = "run_simulator"
 
 [features]
-bins = ["craydate-build", "game-assets"]
+bins = ["craydate-build"] #, "game-assets"]
 
 [profile.dev]
 panic = "abort"
